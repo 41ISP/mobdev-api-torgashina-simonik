@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: Feedback
+config:
+  proxy:
+    inherit: false
+    config:
+      protocol: http
+      hostname: 10.0.55.52
+      port: 3128
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJ1c2VybmFtZSI6Imx5YWx5YTk0NyIsImlhdCI6MTc5MDc1ODQ4OSwiZXhwIjoxNzkwODQ0ODg5fQ.aWDh31V6VTAgc834o4CQxU5wYmpoctkRFV99-kDSync
+  variables:
+    - name: url
+      value: https://api.kitek-pg.ru/api/feedback
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
